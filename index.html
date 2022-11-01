@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img alt="logo" src="img/logo2.png" />
+        <img id="logo" alt="logo" src="img/logo2.png" />
         <h1>Accueil</h1>
         <div id="links">
             <ul>
@@ -19,28 +19,30 @@
                 <li><a href="#" >Contact</a></li>
                 <li><a href="#" >Objectifs</a></li>
                 <li><a href="#" >Loisirs</a></li>
-                <li><a href="#" >Skills</a></li>
+                <li><a class="skills" href="#" >Skills</a></li>
             </ul>
             <p id="links_border"></p>
         </div>
 
     </header>
     <main>
-        <section>
+        <section class="section_accueil presentation">
             <h2>Nafion Antoy</h2>
-            <h3 id="title">Développeur web, toujours en quête de nouvelles connaissances professionnelles.</h3>
-            <h3>Citation préféré :</h3>
+            <h3 id="title">Développeur web, toujours en quête de nouvelles connaissances personnelles et professionnelles.</h3>
+            <h4>Citation préféré :</h4>
             <figure>
                 <p>"Tout vient à point à qui sait attendre."</p>
                 <figcaption>C. Marot</figcaption>
             </figure>
         </section>
-        <section>
-            <div id="presentation">
+        <section class="section_accueil banner">
+            <div id="presentation" >
                 <img alt="Banière de bienvenue" src="img/baniere.jpg">
             </div>
-            <p>&gt;</p> 
+            <p id="btn_nav_next">&gt;</p> 
+            <p id="btn_nav_preview">&lt;</p> 
         </section>
+        </main>
         <aside>
             <h3>Moyen de formation</h3>
             <p>Openclassrooms</p>
@@ -50,11 +52,11 @@
         </aside>
         <footer>
             <ul>
+                <li><a href="#">Linkedin</a></li>
                 <li><a href="#">Eenvoyer un email</a></li>
                 <li><a href="#">Laisser un message</a></li>
                 <li><a href="#">+33 769 06 71 52</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a class="skills" href="#">Skills</a></li>
             </ul>
         </footer>
 </body>

@@ -1,9 +1,163 @@
+/*---------     Importation de fonts    -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@900&display=swap');
 *{
     margin: auto;
     box-sizing: border-box;
 }
+body{
+    font-family: "Petit Formaal Script", cursive;
+}
+
+
 
 /*------------     HEADER      -------------*/
+
 header{
     display: flex;
+}
+#logo{
+    width: 100px;
+}
+header h1{
+    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+    color: rgb(8, 146, 221);
+    border-bottom: 4px solid rgb(8, 146, 221)
+}
+header ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+}
+header ul li a {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(8, 146, 221);
+
+}
+.skills{
+    color: rgb(17, 172, 255);
+    border: solid 2px rgb(17, 172, 255);
+}
+/*___________   '.current_link' concern the link where we currently are   __________*/
+.current_link{
+    color: rgb(17, 172, 255);
+}
+#links_border{
+    display: block;
+    width: 60%;
+    height: 20px;
+    margin-left: 0 auto;
+    border-bottom: 2px solid rgb(8, 146, 221);
+}
+
+
+
+
+/*--------------    Main    ------------*/
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin-top: 30px;
+}
+.section_accueil{
+    width: 47%;
+}
+.presentation{
+    margin-top: 0;
+    padding: 50px 40px;
+    background: linear-gradient(to right, rgb(231, 231, 231), rgb(248, 247, 247)) ;
+    color:rgb(98, 98, 98)
+}
+h2, .presentation h3{
+    margin-bottom: 20px;
+}
+.presentation h4{
+    margin-top: 50px;
+}
+h2{
+    font-size: 2em;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+.presentation h4, .presentation figure{
+    text-align: right;
+}
+figcaption{
+    font-style: italic;
+}
+.section_accueil img{
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+}
+.banner{
+    position: relative;
+}
+#btn_nav_next, #btn_nav_preview{
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: calc(50% - 80px);
+    padding: 20px;
+    cursor: pointer;
+}
+#btn_nav_preview{
+    left: 0;
+}
+#btn_nav_next{
+    right: 0;
+}
+#btn_nav_next:hover, #btn_nav_preview:hover{
+    background-color: rgba(231, 231, 231, 0.789);
+    transition: 0.2s;
+    color:rgb(17, 172, 255)
+}
+
+
+
+
+/*-------   ASIDE   --------*/
+aside{
+    border: dashed 2px rgb(8, 146, 221);
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 100px;
+}
+aside h3{
+    color: rgb(8, 146, 221);
+    margin-bottom: 10px;
+}
+aside p{
+    color: rgb(8, 146, 221);
+}
+
+
+
+/*----------    FOOTER  --------*/
+footer ul{
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    padding: 20px;
+    background-color: rgb(74, 74, 74);
+    margin-bottom: 0px;
+    width: 100vw;
+
+}
+footer ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+footer .skills{
+    border: none;
 }
