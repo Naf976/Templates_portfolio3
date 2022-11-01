@@ -1,0 +1,9 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*------------     HEADER      -------------*/
+header{
+    display: flex;
+}
