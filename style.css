@@ -68,12 +68,13 @@ main{
 }
 .section_accueil{
     width: 47%;
+    height: 40vh;
 }
 .presentation{
     margin-top: 0;
     padding: 50px 40px;
     background: linear-gradient(to right, rgb(231, 231, 231), rgb(248, 247, 247)) ;
-    color:rgb(98, 98, 98)
+    color:rgb(98, 98, 98);
 }
 h2, .presentation h3{
     margin-bottom: 20px;
@@ -92,10 +93,31 @@ h2{
 figcaption{
     font-style: italic;
 }
-.section_accueil img{
+
+.banner{
+    width: 47%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#presentation{
+    width: 100%;
+    display: flex;
+    position: relative;
+    transition: 1s ease;
+    right: 0;
+
+}
+.section_accueil img, .section_accueil video{
     width: 100%;
     box-shadow: 2px 2px 5px black;
 }
+.section_accueil video{
+    flex-shrink: 0;
+    height: 100%;
+    margin-left: 10px;
+}
+
 .banner{
     position: relative;
 }
@@ -107,8 +129,10 @@ figcaption{
     top: calc(50% - 80px);
     padding: 20px;
     cursor: pointer;
+    text-shadow: 2px 1px black;
 }
 #btn_nav_preview{
+    display: none;
     left: 0;
 }
 #btn_nav_next{
