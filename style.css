@@ -10,6 +10,7 @@ body{
 }
 
 
+/*===========================================   Main ========================================*/
 
 /*------------     HEADER      -------------*/
 
@@ -60,7 +61,8 @@ header ul li a {
 
 
 /*--------------    Main    ------------*/
-main{
+
+#home, #hobbies, #projects_main{
     display: flex;
     justify-content: space-between;
     width: 90vw;
@@ -147,8 +149,8 @@ figcaption{
 
 
 
-/*-------   ASIDE   --------*/
-aside{
+/*-------   ASIDE MAIN   --------*/
+#main_aside{
     border: dashed 2px rgb(8, 146, 221);
     width: 250px;
     padding: 20px;
@@ -184,4 +186,74 @@ footer ul li a{
 }
 footer .skills{
     border: none;
+}
+
+
+
+/*========================================  Loiris  =========================================*/
+
+#hobbies{
+    background: linear-gradient(white, rgb(228, 245, 254), rgb(201, 236, 255));
+    padding: 0 10px 100px 10px;
+    color:rgb(8, 146, 221);
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead td{
+    padding: 30px;
+    border-right: solid 2px black;
+}
+td{
+    border-right: solid 1px black;
+    padding: 20px;
+}
+#hobbies thead{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(201, 236, 255);
+    border: solid 2px black;
+}
+
+/*=======================   Projets    =============================*/
+
+#bloc-descriptions{
+    margin-bottom: -10px;
+}
+
+#projects_descriptions{
+    padding: 30px 30px 100px 30px;
+    background: linear-gradient(to bottom right, rgb(238, 238, 238), rgb(253, 253, 253));
+    color:rgb(98, 98, 98);
+}
+#projects h1{
+    font-size: 2.5em;
+    font-family: "poppins";
+    text-transform: uppercase;
+}
+#projects p{
+    padding: 20px;
+    font-size: 1.2em;
+}
+#projects img{
+    width: 500px;
+    padding: 200px;
+    background-color: rgb(200, 200, 200);
+    border: solid 2px rgb(74, 74, 74);
+}
+#projects .creation_date{
+    text-align: right;
+    color:rgb(17, 172, 255);
+    font-size: 1em;
+    margin: 0;
+}
+#projects .watch{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(17, 172, 255);
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: calc(100% - 113.922px);
 }
