@@ -1,8 +1,8 @@
 //    FUNCTION TO SLIDE WHEN USERS CLICK IN THE RIGHT OR LEFT ARROW
 function slide() {
   const bannerContain = document.querySelector("#presentation");
-  const arrowRight = document.querySelector("#btn_nav_next");
-  const arrowLeft = document.querySelector("#btn_nav_preview");
+  const arrowRight = document.querySelector(".JsNext");
+  const arrowLeft = document.querySelector(".JsPreview");
 
   arrowRight.addEventListener("click", () => {
     bannerContain.style.right = "calc(100% + 10px)";
