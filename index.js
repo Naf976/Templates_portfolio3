@@ -15,4 +15,3 @@ function slide() {
     arrowLeft.style.display = "none";
   });
 }
-slide();
