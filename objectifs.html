@@ -8,16 +8,21 @@
 </head>
 <body>
     <main id="objectifs_main">
-        <section class="objectifs_illustrations">
-            <img src="#" alt="Illustration">
+        <section class="objectifs_illustrations" onmouseenter="slide('sliderContainer')">
+            <div class="sliderContainer">
+                <img src="#" alt="Illustration">
+            </div>
+            
             <!--    Les bouttons sont à activer     -->
-            <p class="btn_nav_preview">&lt;</p>
-            <p class="btn_nav_next">&gt;</p>
+            <p class="btn_nav_preview JsPreview">&lt;</p>
+            <p class="btn_nav_next JsNext">&gt;</p>
         </section>
         <section class="objectifs_descriptions">
             <h1>Titre de l'objectif</h1>
             <p>Description de l'objectif.</p>
         </section>
     </main>
+
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
