@@ -1,19 +1,26 @@
-//    FUNCTION TO SLIDE WHEN USERS CLICK IN THE RIGHT OR LEFT ARROW
+//    Function slide() able users to slide when they click in the right or left arrow
 function slide(nameContainer) {
-  let a = "." + nameContainer;
-  const bannerContainer = document.querySelector(a);
+  const bannerContainer = document.querySelector("." + nameContainer);
   const arrowRight = document.querySelector(".JsNext");
   const arrowLeft = document.querySelector(".JsPreview");
-  console.log(a);
+  let nbr = bannerContainer.children.length;
+  let i = 0;
 
-  arrowRight.addEventListener("click", () => {
-    bannerContainer.style.right = "calc(100% + 10px)";
-    arrowRight.style.display = "none";
-    arrowLeft.style.display = "inline-block";
-  });
-  arrowLeft.addEventListener("click", () => {
-    arrowRight.style.display = "inline-block";
-    bannerContainer.style.right = "0";
+  if(nbr > 1){
     arrowLeft.style.display = "none";
-  });
+    arrowRight.addEventListener("click", () => {
+      bannerContainer.style.right = "calc(100% + 10px)";
+      arrowRight.style.display = "none";
+      arrowLeft.style.display = "inline-block";
+    });
+    arrowLeft.addEventListener("click", () => {
+      arrowRight.style.display = "inline-block";
+      bannerContainer.style.right = "0";
+      arrowLeft.style.display = "none";
+    });
+  } else if(nbr <= 1){
+    arrowLeft.style.display = "none";
+    arrowRight.style.display = "none";
+  }
+  
 }
