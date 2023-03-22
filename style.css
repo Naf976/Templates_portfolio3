@@ -287,11 +287,12 @@ text-transform: uppercase;
 
 
 /*==================    Contact   ==========================*/
+
 #coordinates{
     background: var(--gradientGray);
     padding: 10px;
     margin: 0 auto;
-    height: 50%;
+    height: 200px;
 }
 #coordinates #email, #coordinates #number{
     display: flex;
@@ -307,21 +308,49 @@ text-transform: uppercase;
     text-decoration: none;
     background-color: rgb(8, 146, 221);
     color: #fff;
-    padding: 5px 0;
+    padding: 10px 5px;
     margin: 10px 20px;
-    width: 35%;
+    width: 38%;
     text-align: center;
 }
 
 #message_inputs{
     padding: 20px 10px;
-    background-color: rgb(201, 236, 255);
+    background-color: rgb(223, 244, 255);
+    margin: 0;
 }
+#message_inputs .textInput{
+    border: none;
+    width: 60%;
+    height: 30px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+#message_inputs input:focus{
+    outline: none;
+    border: solid 1px rgb(17, 172, 255);
+}
+
+#message_inputs textarea{
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    max-width: 1000px;
+    max-height: 600px;
+}
+#message_inputs textarea:focus{
+    outline: none;
+}
+
 #message button{
+    font-family: "Petit Formaal Script", cursive;
     background-color: rgb(17, 172, 255);
+    padding: 10px 15px;
     color: #fff;
     border: none;
     padding: 5px 15px;
+    margin-top: 10px;
 }
-#message_inputs input{
+#message button:hover{
+    cursor: pointer;
 }
