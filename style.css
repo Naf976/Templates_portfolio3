@@ -7,6 +7,7 @@
 }
 body{
     font-family: "Petit Formaal Script", cursive;
+    --gradientGray: linear-gradient(to right, rgb(231, 231, 231), rgb(248, 247, 247));
 }
 
 
@@ -62,7 +63,7 @@ header ul li a {
 
 /*--------------    Main    ------------*/
 
-#home, #hobbies, #projects_main, #objectifs_main{
+#home, #hobbies, #projects_main, #objectifs_main,#contact{
     display: flex;
     justify-content: space-between;
     width: 90vw;
@@ -75,7 +76,7 @@ header ul li a {
 .presentation{
     margin-top: 0;
     padding: 50px 40px;
-    background: linear-gradient(to right, rgb(231, 231, 231), rgb(248, 247, 247)) ;
+    background: var(--gradientGray) ;
     color:rgb(98, 98, 98);
 }
 h2, .presentation h3{
@@ -134,9 +135,11 @@ figcaption{
     text-shadow: 2px 1px black;
 }
 .btn_nav_preview{
+    display: none;
     left: 0;
 }
 .btn_nav_next{
+    display: none;
     right: 0;
 }
 .btn_nav_next:hover, .btn_nav_preview:hover{
@@ -223,7 +226,7 @@ td{
 
 #projects_descriptions{
     padding: 30px 30px 100px 30px;
-    background: linear-gradient(to bottom right, rgb(238, 238, 238), rgb(253, 253, 253));
+    background: var(--gradientGray);
     color:rgb(98, 98, 98);
 }
 #projects h1{
@@ -271,7 +274,7 @@ td{
 
 #objectifs_main .objectifs_descriptions{
 padding: 50px 100px 200px 50px;
-background: linear-gradient(to bottom left, rgb(238, 238, 238), rgb(253, 253, 253));
+background: var(--gradientGray);
 color: rgb(74, 74, 74);
 }
 .objectifs_descriptions h1{
@@ -280,4 +283,45 @@ color: rgb(74, 74, 74);
     font-weight: normal;
 margin-bottom: 50px;
 text-transform: uppercase;
+}
+
+
+/*==================    Contact   ==========================*/
+#coordinates{
+    background: var(--gradientGray);
+    padding: 10px;
+    margin: 0 auto;
+    height: 50%;
+}
+#coordinates #email, #coordinates #number{
+    display: flex;
+    margin: 15px;
+    width: 100%;
+    justify-content: space-around;
+
+}
+#coordinates p{
+    width: 50%;
+}
+#coordinates a{
+    text-decoration: none;
+    background-color: rgb(8, 146, 221);
+    color: #fff;
+    padding: 5px 0;
+    margin: 10px 20px;
+    width: 35%;
+    text-align: center;
+}
+
+#message_inputs{
+    padding: 20px 10px;
+    background-color: rgb(201, 236, 255);
+}
+#message button{
+    background-color: rgb(17, 172, 255);
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+}
+#message_inputs input{
 }

@@ -7,6 +7,7 @@ function slide(nameContainer) {
   let i = 0;
 
   if(nbr > 1){
+    arrowRight.style.display = "block";
     arrowLeft.style.display = "none";
     arrowRight.addEventListener("click", () => {
       bannerContainer.style.right = "calc(100% + 10px)";
@@ -18,9 +19,6 @@ function slide(nameContainer) {
       bannerContainer.style.right = "0";
       arrowLeft.style.display = "none";
     });
-  } else if(nbr <= 1){
-    arrowLeft.style.display = "none";
-    arrowRight.style.display = "none";
   }
   
 }
