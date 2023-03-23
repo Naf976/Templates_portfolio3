@@ -1,0 +1,102 @@
+/*---------     Importation de fonts    -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@900&display=swap');
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Petit Formaal Script", cursive;
+    background-color:  rgb(97, 97, 97);
+    --gradientGray: linear-gradient(to right, rgb(231, 231, 231), rgb(248, 247, 247));
+}
+
+
+/*===========================================   Main ========================================*/
+
+/*------------     HEADER      -------------*/
+
+header{
+    display: flex;
+    background-color: rgb(244,240,236);
+}
+#logo{
+    width: 100px;
+}
+header h1{
+    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+    color: rgb(245,124,54);
+    border-bottom: 4px solid rgb(245, 124, 54);
+}
+header ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+}
+header ul li a {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(253, 133, 35);
+
+}
+.skills{
+    color: rgb(253, 159, 82);
+    border: solid 2px rgb(253, 159, 82);
+    background-color: #fff;
+}
+/*___________   '.current_link' concern the link where we currently are   __________*/
+.current_link{
+    color: rgb(253, 159, 82);
+}
+#links_border{
+    display: block;
+    width: 60%;
+    height: 20px;
+    margin-left: 0 auto;
+    border-bottom: 2px solid rgb(253, 133, 35);
+}
+
+
+
+
+/*--------------    Main    ------------*/
+
+#home, #hobbies, #projects_main, #objectifs_main,#contact, #skills{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin-top: 30px;
+}
+.section_accueil{
+    width: 47%;
+    height: 40vh;
+ }
+
+/*----------    FOOTER  --------*/
+footer ul{
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    padding: 20px;
+    background-color: rgb(244,240,236);
+    margin-bottom: 0px;
+    width: 100vw;
+
+}
+footer ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(253, 133, 35);
+}
+footer .skills{
+    border: none;
+}
+
+
+
