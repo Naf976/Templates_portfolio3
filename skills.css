@@ -66,17 +66,46 @@ header ul li a {
 
 /*--------------    Main    ------------*/
 
-#home, #hobbies, #projects_main, #objectifs_main,#contact, #skills{
+#headerSkills, #skills{
     display: flex;
     justify-content: space-between;
     width: 90vw;
     margin-top: 30px;
+    color: white;
 }
 .section_accueil{
     width: 47%;
     height: 40vh;
  }
+ #skills{
+    display: block;
+ }
 
+ h2{
+    background-color: rgb(253, 159, 82);
+    display: inline-block;
+    padding: 15px 40px;
+    box-shadow: 2px 2px 3px rgb(250, 179, 121);
+    color: rgb(99, 67, 49);
+ }
+h3{
+    border: solid 2px rgb(245, 124, 54);
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF;
+    font-weight: normal;
+}
+strong{
+    color: rgb(245, 124, 54);
+    font-weight: normal;
+}
+hr{
+    border-color: rgb(245, 124, 54);
+    margin: 50px;
+}
+p{
+    text-align: center;
+}
 /*----------    FOOTER  --------*/
 footer ul{
     position: absolute;
