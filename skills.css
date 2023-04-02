@@ -81,6 +81,31 @@ header ul li a {
  aside{
     width: 30vw;
  }
+ #dev{
+    border: solid 1px rgb(245, 124, 54);
+    border-radius: 100% 50%;
+    width: 350px;
+    height: 300px;
+    margin: 50px 100px 0 0;
+    transform: rotate();
+    background-color: rgb(99, 67, 49);
+    box-shadow: 2px 2px 10px rgb(255,183,77);
+    text-align: center;
+ }
+ .logos{
+    transform: rotate(-15deg);
+    margin-top: 60px;
+ }
+
+ #dev img{
+    width: 70px;
+    transform: rotate(15deg);
+ }
+ #dev .small{
+    width: 40px;
+    margin-right: 30px;
+    margin-left: 40px;
+ }
 
  h2{
     background-color: rgb(255,183,77);
