@@ -66,27 +66,35 @@ header ul li a {
 
 /*--------------    Main    ------------*/
 
-#headerSkills, #skills{
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    margin-top: 30px;
-    color: white;
+#skills{
+ width: 70vw;
+ color: #fff;
 }
-.section_accueil{
-    width: 47%;
-    height: 40vh;
+ section{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
  }
- #skills{
-    display: block;
+ .head-illustrations{
+    margin-top: 0;
+ }
+ aside{
+    width: 30vw;
  }
 
  h2{
-    background-color: rgb(253, 159, 82);
-    display: inline-block;
+    background-color: rgb(255,183,77);
     padding: 15px 40px;
     box-shadow: 2px 2px 3px rgb(250, 179, 121);
     color: rgb(99, 67, 49);
+    width: 300px;
+    margin-left: 0;
+ }
+ .details{
+    margin-top: 100px;
+ }
+ .apps{
+    white-space: nowrap;
  }
 h3{
     border: solid 2px rgb(245, 124, 54);
@@ -103,8 +111,9 @@ hr{
     border-color: rgb(245, 124, 54);
     margin: 50px;
 }
-p{
+section p{
     text-align: center;
+    margin-top: 50px;;
 }
 /*----------    FOOTER  --------*/
 footer ul{
