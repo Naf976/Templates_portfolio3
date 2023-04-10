@@ -93,7 +93,7 @@ header ul li a {
 /*--------------    Main    ------------*/
 
 #skills,
-#mailBox {
+#mailBox, #message {
     width: 70vw;
     color: #fff;
 }
@@ -173,7 +173,7 @@ h2 {
     white-space: nowrap;
 }
 
-h3 {
+#skills h3 {
     border: solid 2px rgb(245, 124, 54);
     border-radius: 5px;
     display: inline-block;
@@ -264,6 +264,25 @@ tr {
     width: 400px;
 }
 
+#message{
+    color: #000;
+}
+
+#message h3{
+    font-weight: normal;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+}
+#message p{
+    background-color: #fff;
+    width: 60vw;
+    min-height: 50vh;
+    margin: 0;
+}
 
 /*----------    FOOTER  --------*/
 footer ul {
